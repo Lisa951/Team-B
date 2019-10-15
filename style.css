@@ -100,7 +100,6 @@ a.image {
     font-size: 15px;
   }
   
-  
   /* Centered text */
   .centered {
     position: absolute;
@@ -156,6 +155,14 @@ a.image {
     z-index: 1;
 }
 
+/* Float three columns side by side */
+.column_full_width {
+  float: left;
+  width: 100%;
+  padding: 0 5px;
+  z-index: 1;
+}
+
 /* Style the counter cards */
 .card_home {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
@@ -170,6 +177,19 @@ a.image {
   border: 10px #008cd2;
   /* For demo purposes only; will be removed */
 }  
+
+/* Center the full-sized image */
+.image_full {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.image_full_centered {
+  display: inline-block;
+  vertical-align: middle;
+}
 
 Form {
     width: 1000px;

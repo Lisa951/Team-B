@@ -75,10 +75,6 @@ p {
         padding: 2px;
         object-fit: cover;
     }   
-    
-a.image {
-  background: url(images/greece/oia-town-santorini-greece-500x300.jpg)
-}
 
 /* Container holding the image and the text */
 .container {
@@ -125,8 +121,8 @@ a.image {
       cursor:pointer;
       /* border-radius: 5px; */
       text-align: center;
-
   }
+
 /* hover effect over join now button */ 
   .container .btn:hover {
       background-color: black;
@@ -141,7 +137,7 @@ a.image {
 .row_image {
   display: flex;
   flex-wrap: wrap;
-  position:relative;
+  position: relative;
   margin: 0 10%;
   padding: 5px;
   /* or -5px; */
@@ -189,6 +185,22 @@ a.image {
 .image_full_centered {
   display: inline-block;
   vertical-align: middle;
+}
+
+.image_desc_button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgb(80, 45, 53);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    padding: 10px 15px;
+    cursor:pointer;
+    /* border-radius: 5px; */
+    text-align: center;
 }
 
 Form {

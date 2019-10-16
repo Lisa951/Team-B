@@ -185,6 +185,7 @@ p {
   vertical-align: middle;
   max-width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
 .image_desc_button {
@@ -334,7 +335,7 @@ Form {
 
   /* Responsive layout: one column layout instead of three columns */
   @media screen and (max-width: 1536px) {
-    .column_image {
+    .column_image, ul.breadcrumb {
       -ms-flex: 100%;
       flex: 100%;
       max-width: 100%;
@@ -383,3 +384,27 @@ Form {
     /* z-index: 5; */
   }
  
+
+  ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+    margin: 0 10%;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }

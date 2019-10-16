@@ -151,6 +151,14 @@ p {
     z-index: 1;
 }
 
+/* Float two columns side by side */
+.column_image_home {
+  float: left;
+  width: 50%;
+  padding: 0 5px;
+  z-index: 1;
+}
+
 /* Float three columns side by side */
 .column_full_width {
   float: left;
@@ -335,7 +343,7 @@ Form {
 
   /* Responsive layout: one column layout instead of three columns */
   @media screen and (max-width: 1536px) {
-    .column_image, ul.breadcrumb {
+    .column_image, .column_image_home, ul.breadcrumb {
       -ms-flex: 100%;
       flex: 100%;
       max-width: 100%;

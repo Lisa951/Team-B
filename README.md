@@ -1,6 +1,14 @@
 # Team-B
 Group Project 
 
+20191016 - CC:
+- Enabled responsive layout for pages (please check about/contact/admin pages): used 1536px to change two- & three- column layouts to one column under this resolution (good for phones/tablets).
+- Separate external JS file created to handle some gallery-specific functions.
+- Gallery individual pages created for one country (will use as template for the rest):
+    - Pagination i.e., breadcrumbs
+    - JS function to display more info (future will be weather/travel Dev APIs)
+- Home page updated to two-column layout.
+
 20191015 - CC:
 - Created new "stealth" folder for our login pages, i.e., login.html, new-user.html, manage-pics.html
 - Updated navbar on all remaining non-login pages removing "Login" link

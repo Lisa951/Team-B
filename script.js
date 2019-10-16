@@ -94,12 +94,14 @@ function AdminremoveRow(rownum) {
                 repeat = form.repeat.value; 
         
                 // If password not entered 
-                if (password == '') 
+                if (password == '') {
                     alert ("Please enter Password"); 
+                    return false;} //extra line added
                       
                 // If confirm password not entered 
-                else if (repeat == '') 
+                else if (repeat == '') {
                     alert ("Please enter confirm password"); 
+                    return false;} //extra line added
                       
                 // passwords do not match      
                 else if (password != repeat) { 

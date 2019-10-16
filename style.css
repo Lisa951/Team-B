@@ -177,14 +177,14 @@ p {
 /* Center the full-sized image */
 .image_full {
   position: relative;
-  width: 100%;
-  height: 100%;
   text-align: center;
 }
 
 .image_full_centered {
-  display: inline-block;
+  /* display: inline-block; */
   vertical-align: middle;
+  max-width: 100%;
+  height: auto;
 }
 
 .image_desc_button {
@@ -331,6 +331,23 @@ Form {
       max-width: 100%;
     }
   }
+
+  /* Responsive layout: one column layout instead of three columns */
+  @media screen and (max-width: 1536px) {
+    .column_image {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+/* Clear floats after the columns */
+.row_image:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /*The container for the about us section*/
 
   .team {

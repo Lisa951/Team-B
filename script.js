@@ -85,3 +85,42 @@ function AdminremoveRow(rownum) {
     var rowtobedeleted = document.getElementById('PhotoTable');
     rowtobedeleted.deleteRow(rownum);
 }
+
+
+ // check passwords are the same for new user 
+            // if then. 
+            function confirmPassword(form) { 
+                password = form.password.value; 
+                repeat = form.repeat.value; 
+        
+                // If password not entered 
+                if (password == '') 
+                    alert ("Please enter Password"); 
+                      
+                // If confirm password not entered 
+                else if (repeat == '') 
+                    alert ("Please enter confirm password"); 
+                      
+                // passwords do not match      
+                else if (password != repeat) { 
+                    alert ("\nPassword did not match: Please try again...") 
+                    return false; 
+                } 
+        
+                // password match. 
+                else{ 
+                    alert("Password Match: Welcome to Molico Travel") 
+                    return true; 
+                } 
+            } 
+       
+
+
+
+
+
+
+
+
+
+

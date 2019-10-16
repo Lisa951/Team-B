@@ -27,24 +27,37 @@
         <p>Sign up for your new account.</p>
     </div>
 
-    <form action="thank-you-email.html" method="post">
+    <form action="thank-you-email.html" method="post" id="form" onSubmit = "return confirmPassword(this)">
+        <div class="form">
+            <label for="email">Enter Email Address:</label>
+            <input type="text" id="myemail" class="form-control" placeholder="Enter Email Address..."  required/>
+    
+        </div>
+    
+        <div class="form">
+            <label for="password">Password:</label>
+            <input type="password" name="password" class="form-control" placeholder="Enter Your Password..." >
+        </div>
+    
+    
+        <div class="form">
+            <label for="repeat">Repeat Password:</label>
+            <input type="password" placeholder="Repeat Password..." name="repeat" >
+        </div>
+    
 
-        <label for="email">Enter Email Address:</label>
-        <input type="text" id="myemail" placeholder="Enter Email Address..." required>
+    
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+    
+        
 
-
-        <label>Password: <input type="password" placeholder="Enter Your Password..." required></label>
-
-        <label for="psw-repeat">Repeat Password:</label>
-        <input type="password" placeholder="Repeat Password..." name="psw-repeat" required>
-
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+     
 
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
         </label>
-    </form>
 
+    </form>
     <hr>
 
     <div class="footer">

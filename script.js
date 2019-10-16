@@ -85,8 +85,3 @@ function AdminremoveRow(rownum) {
     var rowtobedeleted = document.getElementById('PhotoTable');
     rowtobedeleted.deleteRow(rownum);
 }
-
-// Entries by Costa
-function galleryImageDesc {
-    
-}

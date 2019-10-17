@@ -48,38 +48,11 @@ p {
       }
     
 
-/*Navbar formatting*/
-#navbar{
-    overflow: hidden;
-    background-color: rgb(80, 45, 53);
-    padding: 4px 10px;
-    position: fixed;
-    /* border-radius:  8px; */
-    top: 0;
-    width: 100%;
-    transition: top 0.2s;
-    z-index: 5;
-}
 
-#navbar a {
-    float: left;
-    display: block;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    color: snow;
-    font-size: 17px;
-    padding:15px;
-    text-decoration: none;
-}
 
-#navbar a:hover {
-    background-color: antiquewhite;
-    color: rgb(80, 45, 53)
-}
-
-   .container img {
-        object-fit: cover;
-    }   
+.container img {
+    object-fit: cover;
+  }   
 
 /* Container holding the image and the text */
 .container {
@@ -348,7 +321,18 @@ Form {
   }
 
   /* Responsive layout: one column layout instead of three columns */
-  @media screen and (max-width: 1536px) {
+  @media screen and (max-width: 1440px) {
+    .column_image, .column_image_home, p, h1, h2, .centered, .bq, .container .btn, form {
+      /* font-size: 4vw; */
+      font-size: 20px;
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  /* Responsive layout: one column layout instead of three columns */
+  @media screen and (max-width: 600px) {
     .column_image, .column_image_home, p, h1, h2, .centered, .bq, .container .btn, form {
       /* font-size: 4vw; */
       font-size: 15px;

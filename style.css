@@ -359,25 +359,38 @@ Form {
 
 /*The container for the about us section*/
 
-  .team {
-    background-color: palegoldenrod;
-    color: black;
-    margin: 0 10%;
-    padding: 15px; 
-    border-radius: 8px;
-    text-align: center;
+  .container_about{
+
+border-radius: 10px;
+background-color: palegoldenrod;
+padding: 20px 40px 40px 0px;
+max-width: 100%;
+
+  }
+/* about us image*/
+  .container_image{
+
+    display: inline-block;
+    vertical-align: top;
+    max-width: 35%;
+    margin: 20px 30px 0px 85px;
    
     
+    
   }
-/*about us image silhouette*/
-  .aboutus {
-    width:30%;
-    margin: 0px 15px 15px 0px;
-	height: 200px;
-	opacity:.7;
-    object-fit: scale-down;
-    float: left;
-  }
+/*text running along the image for the about us page*/
+  .container_text{
+
+    display: inline-block;
+    
+    max-width: 50%;
+    margin: 20px 30px 0px 50px ;
+    @media (max-width: 700px) { 
+        width: 100%;
+    }
+    }
+
+
 
   .footer{
   overflow: hidden;

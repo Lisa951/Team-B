@@ -1,6 +1,10 @@
 # Team-B
 Group Project 
 
+20191017 - Lisa:
+
+- Added revised code for the About Us page.
+
 20191016 - CC:
 - Enabled responsive layout for pages (please check about/contact/admin pages): used 1536px to change two- & three- column layouts to one column under this resolution (good for phones/tablets).
 - Separate external JS file created to handle some gallery-specific functions.

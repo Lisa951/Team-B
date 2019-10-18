@@ -29,6 +29,7 @@
     </style>
     <script src="../script.js">
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body onload="AdmincreateTable()">
@@ -41,17 +42,18 @@
     </div>
 
     <br><br>
-    <p style="text-align:left;">Click the "Add New Row" button to add photo." button.</p>
+    <p id= "parline" style="text-align:left;">Click the 'Add New Row' button to add photo.</p>
     <p style="text-align:left">
         <input type="button" id="addRow" value="Add New Photo" onclick="AdminaddRow()" />
     </p>
+    <input type ="file" id="genfileloader" onchange="loadFile(event)" style="display: none; margin:10px">
     <div id="cont"></div>
 
 </body>
 
 <script>
     var arrHead = new Array();
-    arrHead = ['', 'Photo Name', 'Thumbnail', 'Category'];
+    arrHead = ['',  'Thumbnail', 'Category'];
 </script>
 
 </html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>USA | Molico Destinations</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../../script.js"></script>
+    <script src="../../script-gallery.js"></script>
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="../../index.html" target="_top">Home</a>
+        <a href="../../gallery.html" target="_top">Gallery</a>
+        <a href="../../contact-us.html" target="_top">Contact</a>
+        <a href="../../about-us.html" target="_top">About</a>
+    </div>
+
+    <div class="row_image">
+        <p><button onclick="goBack()" class="image_desc_button">Go Back</button></p>
+    </div>
+
+    <br>
+
+    <div class="container mt-3">
+
+        <!-- <h2>Carousel</h2> -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3500">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+                <li data-target="#myCarousel" data-slide-to="7"></li>
+                <li data-target="#myCarousel" data-slide-to="8"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/statue-of-liberty-and-one-world-trade-center-in-new-york-usa-1600x900.webp" alt="Statue of Liberty in NYC, USA">
+                    <div class="carousel-caption">
+                        <h3 style="color: white">Statue of Liberty in NYC, USA</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/brooklyn-bridge-nyc-usa-1600x900.webp" alt="Brooklyn Bridge in NYC, USA">
+                    <div class="carousel-caption">
+                        <h3 style="color: white">Brooklyn Bridge in NYC, USA</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/miami-beach-usa-1600x900.webp" alt="Miami Beach, USA">
+                    <div class="carousel-caption">
+                        <h3 style="color: white">Miami Beach, USA</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/washington-dc-usa-1600x900.webp" alt="Washington DC, USA">
+                    <div class="carousel-caption">
+                        <h3 style="color: white">Washington, DC, USA</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/seattle-washington-usa-1600x900.webp" alt="Seattle Washington, USA">
+                    <div class="carousel-caption">
+                        <h3 style="color: white">Seattle Washington, USA</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/san-francisco-usa-1600x900.webp" alt="San Francisco, USA">
+                    <div class="carousel-caption">
+                        <h3 style="color: white">San Francisco, USA</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/venice-beach-california-usa-1600x900.webp" alt="Venice Beach in California, USA">
+                    <div class="carousel-caption">
+                        <h3 style="color: white">Venice Beach in California, USA</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/waikiki-beach-hawaii-usa-1600x900.webp" alt="Waikiki Beach in Hawaii, USA">
+                    <div class="carousel-caption">
+                        <h3 style="color: white">Waikiki Beach in Hawaii, USA</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/phoenix-arizona-usa-1600x900.webp"
+                        alt="Phoenix Arizona, USA">
+                    <div class="carousel-caption">
+                        <h3 style="color: white">Phoenix Arizona, USA</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="row_image">
+        <p><button onclick="galleryUSA()" class="image_desc_button">More Info</button></p>
+    </div>
+
+    <br>
+
+    <div class="row_image">
+        <div class="column_full_width">
+            <blockquote cite="https://en.wikipedia.org/wiki/United_States" id="gal-desc-usa" class="bq-wiki">
+            </blockquote>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="footer">
+        <h5>&copy; Copyright Molico Travel 2019. All Rights Reserved.</h5>
+    </div>
+</body>
+
+</html>

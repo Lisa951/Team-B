@@ -4,10 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Athens, Greece | Molico Destinations</title>
+    <title>Greece | Molico Destinations</title>
     <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="../../script.js"></script>
     <script src="../../script-gallery.js"></script>
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,42 +29,110 @@
         <a href="../../about-us.html" target="_top">About</a>
     </div>
 
+    <div class="row_image">
+        <p><button onclick="goBack()" class="image_desc_button">Go Back</button></p>
+    </div>
+
     <br>
 
-    <div class="container-main">
-        <h2>Athens, Greece</h2>
-        <p>View the beautiful scenery of Greece and its wonderful islands.</p>
-    </div>
+    <div class="container mt-3">
 
-    <hr>
+        <!-- <h2>Carousel</h2> -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3500">
 
-    <div>
-        <ul class="breadcrumb">
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="../../gallery.html">Gallery</a></li>
-            <li><a href="../../country/greece/index.html">Greece</a></li>
-            <li>Athens</li>
-        </ul>
-        <br>
-    </div>
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+                <li data-target="#myCarousel" data-slide-to="7"></li>
+                <li data-target="#myCarousel" data-slide-to="8"></li>
+            </ul>
 
-    <div class="image_full">
-        <img src="../greece/images/odeon-of-herodes-atticus-athens-greece-1500x900.jpg" class="image_full_centered"
-            alt="Odeon of Herodes Atticus in Athens, Greece">
-        <br><br>
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/odeon-of-herodes-atticus-athens-greece-1600x900.webp" alt="Athens, Greece">
+                    <div class="carousel-caption">
+                        <h3 style="color: white">Athens, Greece</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/mikrolimano-marina-athens-greece-1600x900.webp" alt="Athens, Greece">
+                    <div class="carousel-caption">
+                        <h3 style="color: white">Athens, Greece</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/oia-town-santorini-greece-1600x900.webp" alt="Santorini, Greece">
+                    <div class="carousel-caption">
+                        <h3 style="color: white">Santorini, Greece</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/zakynthos-greece-1600x900.webp" alt="Zakynthos, Greece">
+                    <div class="carousel-caption">
+                        <h3 style="color: white">Zakynthos, Greece</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/crete-greece-1600x900.webp" alt="Crete, Greece">
+                    <div class="carousel-caption">
+                        <h3 style="color: white">Crete, Greece</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/myrtos-beach-kefalonia-island-greece-1600x900.webp" alt="Kefalonia, Greece">
+                    <div class="carousel-caption">
+                        <h3 style="color: white">Kefalonia, Greece</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/corfu-island-greece-1600x900.webp" alt="Corfu, Greece<">
+                    <div class="carousel-caption">
+                        <h3 style="color: white">Corfu, Greece</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/lefkada-ionian-islands-greece-1600x900.webp" alt="Lefkada, Greece">
+                    <div class="carousel-caption">
+                        <h3 style="color: white">Lefkada, Greece</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/acropolis-and-parthenon-temple-athens-greece-1600x900.webp" alt="Athens, Greece">
+                    <div class="carousel-caption">
+                        <h3 style="color: white">Athens, Greece</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
     </div>
 
     <hr>
 
     <div class="row_image">
-        <p><button onclick="galleryImageAtticusAthensGreece()" class="image_desc_button">More Info</button></p>
+        <p><button onclick="galleryGreece()" class="image_desc_button">More Info</button></p>
     </div>
 
     <br>
 
     <div class="row_image">
         <div class="column_full_width">
-            <blockquote cite="https://en.wikipedia.org/wiki/Odeon_of_Herodes_Atticus" id="atticus-athens-greece" class="bq">
+            <blockquote cite="https://en.wikipedia.org/wiki/Lefkada" id="gal-desc-greece" class="bq-wiki">
             </blockquote>
         </div>
     </div>

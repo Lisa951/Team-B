@@ -1,4 +1,5 @@
 var AdminPhotoPath = "c:/photos/";
+var rownum;
 function AdmincreateTable()
 {
     var PhotoTable = document.createElement('table');
@@ -21,7 +22,7 @@ function AdminaddRow() {
 
     var rowCnt = PhotoTab.rows.length;        // GET TABLE ROW COUNT.
     var tr = PhotoTab.insertRow(rowCnt);
-
+    rownum = rowCnt;
     for (var c = 0; c < arrHead.length; c++) {
         var td = document.createElement('td');
         td = tr.insertCell(c);
@@ -33,18 +34,19 @@ function AdminaddRow() {
             button.setAttribute('onclick', 'AdminremoveRow(this.parentNode.parentNode.rowIndex)');
             td.appendChild(button);
         }
-        else if (c == 1) // upload a file
-        {
-            var fil = document.createElement("input");
-            fil.setAttribute("type", "file");
-            fil.setAttribute('onchange', 'Adminupdatefunc(this.value, this.parentNode.parentNode.rowIndex)');
-            td.appendChild(fil);
-        }
+        //**************   Below removed as part of the changes in the table structure */
+       // else if (c == 1) // upload a file
+        //{
+        //    var fil = document.createElement("input");
+        //    fil.setAttribute("type", "file");
+        //    fil.setAttribute('onchange', 'Adminupdatefunc(this.value, this.parentNode.parentNode.rowIndex)');
+        //    td.appendChild(fil);
+        //}
 
-        else if (c == 2) //show the thumbnail
+        else if (c == 1) //show the thumbnail
         {
             var img = document.createElement('img');
-            img.setAttribute('src', AdminPhotoPath + 'thumb1.jpg'); /* initial photo...TBD*/
+            img.setAttribute('src', AdminPhotoPath + 'NoPicChosen.jpg'); /* initial photo...TBD*/
             img.setAttribute('width', 100);
             td.appendChild(img);
         }
@@ -55,33 +57,56 @@ function AdminaddRow() {
             td.appendChild(drp);
         }
     }
+    var AddPicToggler = document.getElementById('genfileloader');
+    var AddRowToggler = document.getElementById('addRow');
+    if (AddPicToggler.style.display == "none") {
+        AddPicToggler.style.display = "block"; 
+        AddRowToggler.style.display = "none";
+        document.getElementById('parline').innerHTML = "Choose a photo";
+    }
 }
 
-function Adminupdatefunc(cel, cc) {
-    var PhotoTab = document.getElementById('PhotoTable');
-    cel = cel.replace(/^C:\\fakepath\\/, AdminPhotoPath);
-    var x = document.getElementById('PhotoTable').rows[parseInt(cc)].cells[2];
-    x.innerHTML = "<input type='image' src=" + cel + " width='100'>";
+var loadFile = function (event)
+{
+    var output = document.getElementById('PhotoTable').rows[rownum].cells[1];
+    url = URL.createObjectURL(event.target.files[0]);
+    output.innerHTML = "<input type ='image' src=" + url + " width='100'>";
+    URL.revokeObjectURL(this.src);
+};
+
+//**************    Function Removed as part of the changes in the logic   *****/
+//function Adminupdatefunc(cel, cc) {
+//    var PhotoTab = document.getElementById('PhotoTable');
+//    cel = cel.replace(/^C:\\fakepath\\/, AdminPhotoPath);
+//    var x = document.getElementById('PhotoTable').rows[parseInt(cc)].cells[2];
+//    x.innerHTML = "<input type='image' src=" + cel + " width='100'>";
    /* x.setAttribute('width', 100);*/
     //alert(x.innerHTML);
-}
+//}
 
 function AdminconfigDropDownLists(rower, columner) {
-    //alert(rower);
     var CatNames = new Array('', 'Sports', 'Pets', 'Travel', 'Nature');
-    var x = document.getElementById('PhotoTable').rows[rower].cells[3];
+    var x = document.getElementById('PhotoTable').rows[rower].cells[2];
     var htmls = '<select>';
 
-    for (i = 0; i < CatNames.length; i++) { //alert(i);
+    for (i = 0; i < CatNames.length; i++) { 
         htmls += "<option value='" + CatNames[i] + "'>" + CatNames[i] + "</option>";
     }
     htmls += '</select>';
-    //alert(htmls);
+    
     x.innerHTML = htmls;
-    //alert(x);
+    var AddPicToggler = document.getElementById('genfileloader');
+    var AddRowToggler = document.getElementById('addRow');
+    
+    if (AddPicToggler.style.display == "block")  {
+        AddPicToggler.value="";
+        AddPicToggler.style.display = "none"; //.setAttribute('display','block');
+        AddRowToggler.style.display = "block";
+        document.getElementById('parline').innerHTML = "Click the 'Add New Row' button to add photo.";
+
+    }
 }
 function AdminremoveRow(rownum) {
-   // alert(rownum);
     var rowtobedeleted = document.getElementById('PhotoTable');
     rowtobedeleted.deleteRow(rownum);
 }

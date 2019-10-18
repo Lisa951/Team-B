@@ -40,22 +40,23 @@ p {
     font-size: 25px;
     }
 
-.bq {
+.bq-wiki {
       text-align: left;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       /* color: rgb(0, 0, 0); */
       font-size: 25px;
+      color: #502d35;
       }
     
 
 
 
-.container img {
+.container-main img {
     object-fit: cover;
   }   
 
 /* Container holding the image and the text */
-.container {
+.container-main {
     position: relative;
     text-align: center;
     color: whitesmoke;
@@ -86,7 +87,7 @@ p {
   }
 
   /* Join now button */
-  .container .btn {
+  .container-main .btn {
       position: absolute;
       top: 75%;
       left: 50%;
@@ -103,16 +104,16 @@ p {
   }
 
 /* hover effect over join now button */ 
-  .container .btn:hover {
+  .container-main .btn:hover {
       background-color: black;
       color: white;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
-  body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
-  * {box-sizing: border-box;}
+* {box-sizing: border-box;}
+body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 
-  /* Remove extra left and right margins, due to padding */
+/* Remove extra left and right margins, due to padding */
 .row_image {
   display: flex;
   flex-wrap: wrap;
@@ -120,6 +121,8 @@ p {
   margin: 0 5%;
   padding: 5px;
   /* or -5px; */
+  text-align: center;
+    color: white;
 }
 
 /* Float three columns side by side */
@@ -128,6 +131,8 @@ p {
     width: 33.33%;
     padding: 0 5px;
     z-index: 1;
+    text-align: center;
+    color: white;
 }
 
 /* Float two columns side by side */
@@ -138,11 +143,19 @@ p {
   z-index: 1;
 }
 
-/* Float three columns side by side */
+/* Float full-width column */
 .column_full_width {
   float: left;
   width: 100%;
   padding: 0 5px;
+  z-index: 1;
+}
+
+/* Float full-width column */
+.column_partial_width {
+  float: left;
+  width: 1500px;
+  padding: 5px;
   z-index: 1;
 }
 
@@ -177,18 +190,24 @@ p {
 
 .image_desc_button {
     position: absolute;
-    top: 70%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     color: white;
-    background-color: rgb(80, 45, 53);
+    background-color: #502d35;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
-    padding: 10px 15px;
-    cursor:pointer;
-    /* border-radius: 5px; */
+    padding: 5px 10px;
+    cursor: pointer;
     text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.image_desc_button:hover {
+  color: #502d35;
+  background-color: white;
 }
 
 Form {
@@ -264,11 +283,6 @@ Form {
     position: relative;
     display: flex;   
   }
-
-
-  * {
-    box-sizing: border-box;
-  }
   
   body {
     margin: 0;
@@ -310,18 +324,17 @@ Form {
       max-width: 50%;
     }
   }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
+
+  /* Responsive layout: Less than 1440px */
+  @media screen and (max-width: 1440px) {
+    .column_image, .column_image_home, p, .bq-wiki, .container-main .btn, form, .slideshow-container,
+    .bs-example, .myCarousel, .carousel-item active, .carousel-item {
+      /* font-size: 4vw; */
+      font-size: 17px;
       -ms-flex: 100%;
       flex: 100%;
       max-width: 100%;
     }
-  }
-
-  /* Responsive layout: one column layout instead of three columns */
-  @media screen and (max-width: 1440px) {
     h1, h2, h3, .centered {
       /* font-size: 4vw; */
       font-size: 20px;
@@ -331,19 +344,16 @@ Form {
     }
   }
 
-  /* Responsive layout: one column layout instead of three columns */
-  @media screen and (max-width: 1440px) {
-    .column_image, .column_image_home, p, .bq, .container .btn, form {
+  /* Responsive layout: Less than 600px */
+  @media screen and (max-width: 600px) {
+    .column_image, .column_image_home, p, .bq-wiki, .container-main .btn, form,
+    .bs-example, .myCarousel, .carousel-item active, .carousel-item {
       /* font-size: 4vw; */
-      font-size: 17px;
+      font-size: 14px;
       -ms-flex: 100%;
       flex: 100%;
       max-width: 100%;
     }
-  }
-
-  /* Responsive layout: one column layout instead of three columns */
-  @media screen and (max-width: 600px) {
     h1, h2, h3, .centered {
       /* font-size: 4vw; */
       font-size: 16px;
@@ -351,17 +361,12 @@ Form {
       flex: 100%;
       max-width: 100%;
     }
-  }
-
-  /* Responsive layout: one column layout instead of three columns */
-  @media screen and (max-width: 600px) {
-    .column_image, .column_image_home, p, .bq, .container .btn, form {
-      /* font-size: 4vw; */
-      font-size: 14px;
+    .column {
       -ms-flex: 100%;
       flex: 100%;
       max-width: 100%;
     }
+
   }
 
 /* Clear floats after the columns */
@@ -424,7 +429,7 @@ max-width: 100%;
     padding: 10px 16px;
     list-style: none;
     background-color: #eee;
-    margin: 0 5%;
+    margin: 0 0.75%;
   }
   ul.breadcrumb li {
     display: inline;
@@ -466,11 +471,13 @@ max-width: 100%;
   padding: 18px 22px;
   text-decoration: none;
   font-size: 22px;
+  margin: 1px 0px 1px 0px;
 }
 
 .topnav a:hover {
   background-color: #dbdbdb;
   color: black;
+  text-decoration: underline;
 }
 
 .topnav a.active {
@@ -495,3 +502,106 @@ max-width: 100%;
     text-align: left;
   }
 }
+
+/* ----------------------------------- GALLERY CAROUSEL ----------------------------------- */
+
+/* * {box-sizing:border-box} */
+
+/* Slideshow container */
+/* .slideshow-container {
+  max-width: 2400px;
+  position: relative;
+  margin: auto;
+} */
+
+/* Hide the images by default */
+/* .mySlides {
+  display: none;
+} */
+
+/* Next & previous buttons */
+/* .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+} */
+
+/* Position the "next button" to the right */
+/* .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+} */
+
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+} */
+
+/* Caption text */
+/* .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+} */
+
+/* Number text (1/3 etc) */
+/* .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+} */
+
+/* The dots/bullets/indicators */
+/* .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+} */
+
+/* Fading animation */
+/* .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+} */
+
+
+
+
+

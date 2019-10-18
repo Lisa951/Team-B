@@ -34,6 +34,10 @@ function galleryImageMarinaAthensGreece() {
     document.getElementById("marina-athens-greece").innerHTML = "Piraeus is situated in the southwest part of the central plain of Attica, also widely known as the Athens or Attica Basin, which the Athens agglomeration (urban area) sprawls across. Piraeus is bounded by the Mount Aigaleo to the northwest, and the Saronic Gulf to the south and west, and connected with the rest of the Athens Urban Area to the east and northeast. The 'city proper' of Piraeus consists of a rocky peninsula, originally an island, featuring three natural harbours. In addition to the central one, called Kantharos in ancient times, the smaller harbours to the east are still in use: Zea, also known as Pasalimani, and Munichia, the smallest of the three and widely known as Mikrolimano and Tourkolimano . Nowadays, the Greater Piraeus includes the harbours of Drapetsona, Keratsini and Perama. The central harbour is a hub of commercial and passenger shipping, whereas the two smaller ones cater to recreational and fishing craft as well as passenger hydrofoils. The municipality has an area of 10.865 km2.";
 }
 
+function galleryGreece() {
+    document.getElementById("gal-desc-greece").innerHTML = "Greece, officially the Hellenic Republic (Greek Ελληνική Δημοκρατία), also known as Hellas (Greek Ελλάς), is a country located in Southeast Europe. Its population is approximately 10.7 million as of 2018. Athens is the nation's capital and largest city, followed by Thessaloniki.";
+}
+
 
 
 //Breadcrumbs based on URL location
@@ -68,3 +72,36 @@ if ($('#siteBreadcrumb ol.breadcrumb')) {
     </ol>
 </nav>
 </div> */
+
+
+
+/* ----------------------------------- GALLERY CAROUSEL ----------------------------------- */
+
+// var slideIndex = 1;
+// showSlides(slideIndex);
+
+// // Next/previous controls
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
+
+// // Thumbnail image controls
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
+
+// function showSlides(n) {
+//   var i;
+//   var slides = document.getElementsByClassName("mySlides");
+//   var dots = document.getElementsByClassName("dot");
+//   if (n > slides.length) {slideIndex = 1}
+//   if (n < 1) {slideIndex = slides.length}
+//   for (i = 0; i < slides.length; i++) {
+//       slides[i].style.display = "none";
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//       dots[i].className = dots[i].className.replace(" active", "");
+//   }
+//   slides[slideIndex-1].style.display = "block";
+//   dots[slideIndex-1].className += " active";
+// }

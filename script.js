@@ -116,16 +116,6 @@ function AdminremoveRow(rownum) {
                 } 
             } 
        
-
-
-
-
-
-
-
-
-
-
 function functionTopNav() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -134,5 +124,3 @@ function functionTopNav() {
     x.className = "topnav";
   }
 }
-
-

@@ -1,0 +1,19 @@
+ Volume in drive C has no label.
+ Volume Serial Number is 341F-67AF
+
+ Directory of C:\Users\FSWD\Documents\YorkU\CSFS1000 - Foundations of Full-Stack Web Development\CSFS1000 - Coding HTML5, CSS3, JavaScript\git\constantine-c\team-b\country\germany\images
+
+10/18/2019  10:18 PM    <DIR>          .
+10/18/2019  10:18 PM    <DIR>          ..
+10/18/2019  10:17 PM           317,310 bacharach-germany-1600x900.webp
+10/18/2019  10:17 PM           291,294 bamberg-bavaria-germany-1600x900.webp
+10/18/2019  10:17 PM           254,274 berliner-dom-in-berlin-germany-1600x900.webp
+10/18/2019  10:17 PM           145,660 brandenburg-gate-in-berlin-germany-1600x900.webp
+10/18/2019  06:11 PM           268,504 elbe-river-dresden-saxony-germany-1600x900.webp
+10/18/2019  10:18 PM                 0 filenames.txt
+10/18/2019  10:17 PM           233,472 frankfurt-germany-1600x900.webp
+10/18/2019  10:16 PM           207,610 gendarmenmarkt-square-in-berlin-germany-1600x900.webp
+10/18/2019  10:16 PM           335,420 neuschwanstein-castle-in-germany-1600x900.webp
+10/18/2019  10:16 PM           185,614 wurzburg-bavaria-germany-1600x900.webp
+              10 File(s)      2,239,158 bytes
+               2 Dir(s)  132,172,189,696 bytes free

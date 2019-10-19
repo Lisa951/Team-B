@@ -1,0 +1,19 @@
+ Volume in drive C has no label.
+ Volume Serial Number is 341F-67AF
+
+ Directory of C:\Users\FSWD\Documents\YorkU\CSFS1000 - Foundations of Full-Stack Web Development\CSFS1000 - Coding HTML5, CSS3, JavaScript\git\constantine-c\team-b\country\spain\images
+
+10/18/2019  11:33 PM    <DIR>          .
+10/18/2019  11:33 PM    <DIR>          ..
+10/18/2019  10:15 PM           168,766 balearic-islands-spain-1600x900.webp
+10/18/2019  10:15 PM           222,302 barcelona-spain-1600x900.webp
+10/18/2019  10:15 PM           266,232 catalonia-spain-1600x900.webp
+10/18/2019  11:33 PM                 0 filenames.txt
+10/18/2019  10:15 PM           265,106 madrid-spain-1600x900.webp
+10/18/2019  10:15 PM           278,086 mallorca-islands-spain-1600x900.webp
+10/18/2019  10:15 PM           223,950 national-museum-in-barcelona-spain-1600x900.webp
+10/18/2019  10:15 PM           213,596 old-square-in-madrid-spain-1600x900.webp
+10/18/2019  06:11 PM           314,040 spain-costa-brava-tossa-de-mar-1600x900.webp
+10/18/2019  10:15 PM           322,024 valencia-spain-1600x900.webp
+              10 File(s)      2,274,102 bytes
+               2 Dir(s)  129,583,644,672 bytes free

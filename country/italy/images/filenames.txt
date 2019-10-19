@@ -1,0 +1,22 @@
+ Volume in drive C has no label.
+ Volume Serial Number is 341F-67AF
+
+ Directory of C:\Users\FSWD\Documents\YorkU\CSFS1000 - Foundations of Full-Stack Web Development\CSFS1000 - Coding HTML5, CSS3, JavaScript\git\constantine-c\team-b\country\italy\images
+
+10/18/2019  11:01 PM    <DIR>          .
+10/18/2019  11:01 PM    <DIR>          ..
+10/18/2019  10:13 PM           213,118 apulia-italy-1600x900.webp
+10/18/2019  10:13 PM           218,844 coliseum-in-rome-italy-1600x900.webp
+10/18/2019  11:01 PM                 0 filenames.txt
+10/18/2019  10:13 PM           170,166 foro-romano-in-rome-italy-1600x900.webp
+10/18/2019  10:13 PM           202,286 grand-canal-in-venice-italy-1600x900.webp
+10/18/2019  06:11 PM           269,360 island-murano-venice-italy-1600x900.webp
+10/18/2019  10:13 PM           147,816 piazza-navona-in-rome-italy-1600x900.webp
+10/18/2019  10:13 PM           127,588 santa-maria-in-venice-italy-1600x900.webp
+10/18/2019  10:12 PM           209,404 tiber-river-in-rome-italy-1600x900.webp
+10/18/2019  10:12 PM           144,522 varenna-italy-1600x900.webp
+              10 File(s)      1,703,104 bytes
+               2 Dir(s)  130,546,458,624 bytes free
+
+
+

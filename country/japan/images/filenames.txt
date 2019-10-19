@@ -1,0 +1,23 @@
+ Volume in drive C has no label.
+ Volume Serial Number is 341F-67AF
+
+ Directory of C:\Users\FSWD\Documents\YorkU\CSFS1000 - Foundations of Full-Stack Web Development\CSFS1000 - Coding HTML5, CSS3, JavaScript\git\constantine-c\team-b\country\japan\images
+
+10/18/2019  10:33 PM    <DIR>          .
+10/18/2019  10:33 PM    <DIR>          ..
+10/18/2019  10:11 PM           292,990 autumn-in-kyoto-japan-1600x900.webp Kyoto, Japan
+10/18/2019  10:11 PM           228,030 autumn-in-mt-fuji-japan-1600x900.webp Mt. Fuji, Japan
+10/18/2019  10:11 PM           331,568 bamboo-forest-in-kyoto-japan-1600x900.webp Kyoto, Japan
+10/18/2019  10:33 PM                 0 filenames.txt
+10/18/2019  10:11 PM           265,128 fujiyoshida-japan-1600x900.webp Fujiyoshida, Japan
+10/18/2019  06:11 PM           480,490 himeji-castle-in-himeji-japan-1600x900.webp Himeji, Japan
+10/18/2019  10:10 PM           187,394 mt-fuji-japan-1600x900.webp Mt. Fuji, Japan
+10/18/2019  10:10 PM           318,222 osaka-japan-1600x900.webp Osaka, Japan
+10/18/2019  10:10 PM           261,394 sensoji-temple-in-tokyo-japan-1600x900.webp Tokyo, Japan
+10/18/2019  10:10 PM           337,518 spring-season-in-japan-1600x900.webp Japan
+              10 File(s)      2,702,734 bytes
+               2 Dir(s)  130,546,995,200 bytes free
+
+
+
+Japan (Japanese: 日本, Nippon [ɲippoꜜɴ] or Nihon [ɲihoꜜɴ], formally 日本国, Nippon-koku or Nihon-koku, lit. 'State of Japan') is an island country in East Asia. Located in the Pacific Ocean, it lies off the eastern coast of the Asian continent and stretches from the Sea of Okhotsk in the north to the East China Sea and the Philippine Sea in the south.

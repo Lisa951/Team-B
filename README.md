@@ -1,8 +1,11 @@
 # Team-B
 Group Project 
 
-20191017 - Lisa:
+20191018 - CC:
+- Gallery carousel tested and working.
+- Pages updated: home, contact, about.
 
+20191017 - Lisa:
 - Added revised code for the About Us page.
 
 20191016 - CC:

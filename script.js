@@ -85,7 +85,7 @@ var loadFile = function (event)
 //}
 
 function AdminconfigDropDownLists(rower, columner) {
-    var CatNames = new Array('', 'Sports', 'Pets', 'Travel', 'Nature');
+    var CatNames = new Array('', 'Canada','England', 'France', 'Germany', 'Greece', 'Italy','Japan','Spain','USA');
     var x = document.getElementById('PhotoTable').rows[rower].cells[2];
     var htmls = '<select>';
 

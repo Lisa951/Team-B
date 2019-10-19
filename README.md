@@ -5,6 +5,10 @@ Group Project
 - Gallery carousel tested and working.
 - Pages updated: home, contact, about.
 
+20191018 - Motaz:
+- Manage-Pics modified and tested.
+- Script file modified.
+
 20191017 - Lisa:
 - Added revised code for the About Us page.
 
